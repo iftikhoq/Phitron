@@ -21,16 +21,18 @@ void solve(){
     bool check=false;
     int mx = INT_MIN;
     int cnt(0);
-    for(int i=str.size()-1;i>=0;i++){
-        if(str[i]=='g'){
+    for(int i=0;i<str.size();i++){
+        if(str[i]==ch && !check){
             check = true;
+            cnt=0;
         }
-        else if(str[i]==ch){
+        if(str[i]=='g'){
             mx=max(mx,cnt);
+            check=false;
         }
         if(check) cnt++;
     }
-    cout << cnt << endl;
+    cout << mx << endl;
 }   
 signed main(){
     ios::sync_with_stdio(0); cin.tie(NULL); cout.tie(NULL);
