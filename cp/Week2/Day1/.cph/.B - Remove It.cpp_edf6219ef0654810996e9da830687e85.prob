@@ -1,0 +1,1 @@
+{"name":"Local: B - Remove It","url":"f:\\Code\\Phitron\\cp\\Week2\\Day1\\B - Remove It.cpp","tests":[{"id":1711116702125,"input":"5 5\n3 5 6 5 4","output":""},{"id":1711116716451,"input":"3 3\n3 3 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Code\\Phitron\\cp\\Week2\\Day1\\B - Remove It.cpp","group":"local","local":true}

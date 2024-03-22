@@ -1,0 +1,1 @@
+{"name":"Local: B - Minor Change","url":"f:\\Code\\Phitron\\cp\\Week2\\Day1\\B - Minor Change.cpp","tests":[{"id":1711116955248,"input":"abcde\nbcdea","output":"5"},{"id":1711116973557,"input":"apple\napple","output":"0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Code\\Phitron\\cp\\Week2\\Day1\\B - Minor Change.cpp","group":"local","local":true}
