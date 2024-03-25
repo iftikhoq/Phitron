@@ -1,0 +1,1 @@
+{"name":"Local: E","url":"f:\\Code\\Phitron\\cp\\Contest\\2nd\\E.cpp","tests":[{"id":1711300007796,"input":"3\n5 2\n7 0 1 4 2\n4 100\n1 0 2 0\n4 3\n1 1 0 2\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"f:\\Code\\Phitron\\cp\\Contest\\2nd\\E.cpp","group":"local","local":true}
