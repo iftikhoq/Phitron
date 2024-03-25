@@ -31,8 +31,8 @@ void solve(){
 signed main(){
     ios::sync_with_stdio(0); cin.tie(NULL); cout.tie(NULL);
    
-   //  int test;
-   //  cin >> test;
-   //  while (test--) 
+    int test;
+    cin >> test;
+    while (test--) 
             solve();
 }
