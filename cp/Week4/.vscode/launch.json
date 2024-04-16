@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "f:/Code/Phitron/cp",
-      "program": "f:/Code/Phitron/cp/build/Debug/outDebug",
+      "cwd": "f:/Code/Phitron/cp/Week4",
+      "program": "f:/Code/Phitron/cp/Week4/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
