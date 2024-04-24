@@ -12,25 +12,18 @@
 
 using namespace std;
 void solve(){
-    int n,k;
-    cin >> n >> k;
-    int arr[n];
-    f1(n) cin >> arr[i];
-    ll count(0);
-    sort(arr,arr+n);
-    f1(n-1){
-        cout << arr[i]<< ": ";
-        if(arr[i]*2<=k){
-            arr[i+1]-=arr[i];
-            k-=arr[i]*2;
-            count++;
-            cout << arr[i+1] << endl;
+   ll n;
+   cin >> n;
+   ll k = log2(n);
+//    cout << k << endl;
+   ll y=0;
+   for(ll i=k-1;i>=0;i--){
+        if((1<<i)&n){
+            y|=(1<<i);
         }
-        else break;
-    } 
-    cout << arr[n-1] sp << k << endl;
-    if(arr[n-1]<=k) count++;
-    cout << count << endl;
+   }
+   ll p=pow(2,k);
+   cout << y << " " << p << endl;
 }   
 signed main(){
     ios::sync_with_stdio(0); cin.tie(NULL); cout.tie(NULL);
