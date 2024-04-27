@@ -11,27 +11,40 @@
 #define MOD             1000000007
 
 using namespace std;
-void solve(){
-     ll n,k;
-     cin >> n >> k;
-     ll arr[n];
 
-    f1(n){
-        cin >> arr[i];
-        arr[i]%=k;
-        if(arr[i]<=k/2) arr[i]+=k;
-        arr[i]+=k;
-        // cout << arr[i] << " ";
-    } 
-    sort(arr,arr+n);
-        cout << arr[n-1]-arr[0] << endl; 
-   
+bool binarySearch(int arr[], int l, int r, int x){
+    while(l<=r) {
+        int m =(l+r)/2;
+        if (arr[m] == x)
+            return true;
+        if (arr[m] < x)
+            l = m + 1;
+        else
+            r=m-1;
+    }
+    return false;
+}
+void solve(){
+    int n,k;
+    cin >> n >> k;
+    int arr[n];
+    f1(n) cin >> arr[i];
+
+    while(k--){
+        int s=0,e=n-1;
+        int val;
+        cin >> val;
+        
+        if(binarySearch(arr,s,e,val)) yes
+        else no
+    }
+
 }   
 signed main(){
     ios::sync_with_stdio(0); cin.tie(NULL); cout.tie(NULL);
    
-    int test;
-    cin >> test;
-    while (test--) 
+   //  int test;
+   //  cin >> test;
+   //  while (test--) 
             solve();
 }

@@ -12,20 +12,33 @@
 
 using namespace std;
 void solve(){
-     ll n,k;
-     cin >> n >> k;
-     ll arr[n];
+    string str;
+    cin >> str;
+    char s=str[0],e=str[str.size()-1];
+    int dir = 1;
+    if(e<s) dir = -1;
+    map<char, queue <int>> mp;
 
-    f1(n){
-        cin >> arr[i];
-        arr[i]%=k;
-        if(arr[i]<=k/2) arr[i]+=k;
-        arr[i]+=k;
-        // cout << arr[i] << " ";
-    } 
-    sort(arr,arr+n);
-        cout << arr[n-1]-arr[0] << endl; 
-   
+    f1(str.size()){
+        mp[str[i]].push(i);
+    }
+  
+    vi ans;
+    ll cost(0),tiles(0);
+     
+    for(char i=s;i!=e+dir;i+=dir){
+        while(!mp[i].empty()){
+            ans.pb(mp[i].front());
+            mp[i].pop();
+        }
+    }
+
+    f2(1,ans.size()){
+        cost+=abs(str[ans[i]]-str[ans[i-1]]);
+    }
+    cout << cost sp << ans.size() << endl;
+    f1(ans.size()) cout << ans[i]+1 sp;
+    cout << endl; 
 }   
 signed main(){
     ios::sync_with_stdio(0); cin.tie(NULL); cout.tie(NULL);
